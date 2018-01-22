@@ -37,6 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:checked="true"
+            android:onClick="rad1Handler"
             android:text="Fahreinheit to Celsius" />
 
         <RadioButton
@@ -44,6 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="rad2Handler"
             android:text="Celsius to Fahrenheit" />
     </RadioGroup>
 
@@ -63,18 +65,15 @@
         android:id="@+id/convert"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:onClick="convertClicked"
         android:text="Convert!"
-        app:layout_constraintBottom_toTopOf="@+id/listView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/input"
@@ -99,15 +98,6 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/input"
         app:layout_constraintStart_toEndOf="@+id/input" />
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="368dp"
-        android:layout_height="260dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/output"
         android:layout_width="0dp"
@@ -131,5 +121,20 @@
         android:textSize="30sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/output"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:stackFromBottom="false"
+        android:transcriptMode="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convert" />
 
 </android.support.constraint.ConstraintLayout>
