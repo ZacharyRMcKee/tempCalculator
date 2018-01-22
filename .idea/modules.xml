@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Starf\AndroidStudioProjects\tempCalculator\app\app.iml" filepath="C:\Users\Starf\AndroidStudioProjects\tempCalculator\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/tempCalculator.iml" filepath="$PROJECT_DIR$/tempCalculator.iml" />
+      <module fileurl="file://C:\Users\Starf\AndroidStudioProjects\tempCalculator\tempCalculator.iml" filepath="C:\Users\Starf\AndroidStudioProjects\tempCalculator\tempCalculator.iml" />
     </modules>
   </component>
 </project>
